@@ -177,7 +177,6 @@ jupyter notebook
 ```
 ---
 
-
 ## Model Performance
 
 ### Classification Metrics
@@ -502,26 +501,6 @@ jupyter==1.0.0         # Interactive notebook interface
 - Early stakeholder alignment on success metrics prevents scope creep
 
 ---
-
-## Contributing
-
-Contributions to improve the project are welcome. Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add new feature'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
-
-**Areas particularly welcome for contribution:**
-- Alternative modeling approaches (deep learning, ensemble methods)
-- Additional feature engineering techniques
-- Dashboard enhancements or alternative visualizations
-- Documentation improvements
-- Code optimization and refactoring
-
----
-
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full details.
