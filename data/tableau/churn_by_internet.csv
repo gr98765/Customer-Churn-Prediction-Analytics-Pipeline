@@ -1,0 +1,4 @@
+InternetService,Total_Customers,Churned_Customers,Churn_Rate
+DSL,472,111,0.23516949152542374
+Fiber optic,648,179,0.2762345679012346
+No,289,84,0.2906574394463668

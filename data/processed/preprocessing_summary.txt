@@ -1,0 +1,12 @@
+
+PREPROCESSING SUMMARY:
+
+Original Data: 7043 rows, 23 columns
+Final Features: 32
+
+Train Set: 5634 samples
+Test Set: 1409 samples
+
+Class Distribution Maintained:
+  Train: 26.5% churn
+  Test: 26.5% churn

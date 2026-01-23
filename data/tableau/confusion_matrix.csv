@@ -1,0 +1,5 @@
+Actual,Predicted,Type,Count
+No Churn,No Churn,True Negative,922
+No Churn,Churn,False Positive,113
+Churn,No Churn,False Negative,177
+Churn,Churn,True Positive,197

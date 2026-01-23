@@ -1,0 +1,12 @@
+Metric,Value
+Total Customers,1409
+Actual Churners,374
+Predicted Churners,310
+Churn Rate,26.5%
+High Risk Customers,204
+Medium Risk Customers,336
+Low Risk Customers,869
+Avg Monthly Charge,$66.01
+Avg Tenure,32.0
+Total Monthly Revenue,"$93,006"
+Annual Revenue at Risk,"$244,720"
