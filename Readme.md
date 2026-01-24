@@ -507,18 +507,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## Contact
-
-**Your Name**
-
-Email: your.email@example.com  
-LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)  
-GitHub: [github.com/yourusername](https://github.com/yourusername)  
-Portfolio: [yourwebsite.com](https://yourwebsite.com)
-
-**Project Repository:** [github.com/yourusername/churn-prediction-ml-analytics](https://github.com/yourusername/churn-prediction-ml-analytics)
-
----
 
 ## Acknowledgments
 
