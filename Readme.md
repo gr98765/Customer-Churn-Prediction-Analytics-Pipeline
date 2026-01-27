@@ -507,20 +507,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-
-## Acknowledgments
-
-**Dataset:**  
-Telco Customer Churn dataset from [Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
-
-**Tools & Libraries:**  
-Thanks to the open-source community for scikit-learn, XGBoost, pandas, and Tableau Public
-
-**Inspiration:**  
-Real-world customer retention challenges in the telecommunications industry
-
----
-
 ## Citation
 
 If you use this project in your research or work, please cite:
