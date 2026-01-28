@@ -507,22 +507,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## Citation
-
-If you use this project in your research or work, please cite:
-```bibtex
-@misc{churn_prediction_2026,
-  author = {Your Name},
-  title = {Customer Churn Prediction and Analytics Pipeline},
-  year = {2026},
-  publisher = {GitHub},
-  journal = {GitHub repository},
-  howpublished = {\url{https://github.com/yourusername/churn-prediction-ml-analytics}}
-}
-```
-
----
-
 **Repository:** [github.com/yourusername/churn-prediction-ml-analytics](https://github.com/yourusername/churn-prediction-ml-analytics)  
 **Dashboard:** [View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/aditi.manivannan/viz/CustomerChurnAnalysis_17699188633880/Dashboard1)  
-**Last Updated:** February 2026
