@@ -97,10 +97,8 @@ The interactive dashboard provides:
 churn-prediction-ml-analytics/
 │
 ├── notebook/
-│   ├── 01_Exploratory_Data_Analysis.ipynb
-│   ├── 02_Data_Preprocessing.ipynb
-│   ├── 03_Model_Training_and_Evaluation.ipynb
-│   └── 04_Dashboard_Data_Preparation.ipynb
+│   ├── Project_implementation.ipynb
+│   ├── readme.md
 │
 ├── data/
 │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
@@ -129,9 +127,6 @@ churn-prediction-ml-analytics/
 └── README.md
 ```
 
-**Note:** Data files (`.csv`) and model files (`.pkl`) are excluded from version control via `.gitignore` due to file size constraints. The original dataset can be downloaded from the Kaggle link above.
-
----
 
 ## Getting Started
 
@@ -224,24 +219,6 @@ jupyter notebook
 - Faster training through gradient boosting optimization
 - Better handling of class imbalance
 
-### Limitations & Improvement Opportunities
-
-**Current Gaps:**
-1. **40% of churners missed** (False Negative rate) - Highest priority for improvement
-2. **30% false alarms** (False Positive rate) - Acceptable but can be optimized
-3. **Class imbalance** (26.5% churn) - Could benefit from SMOTE or advanced sampling
-
-**Planned Improvements:**
-- Apply SMOTE (Synthetic Minority Oversampling) to balance training data
-- Hyperparameter tuning using GridSearchCV or Optuna
-- Ensemble stacking (combine XGBoost + Random Forest)
-- Additional feature engineering from domain knowledge
-- Quarterly model retraining with fresh data
-
-**Target Performance:**
-- Recall improvement from 60% to 70%+ (catch 10% more churners)
-- Maintain or improve precision above 70%
-- Achieve ROC-AUC above 90%
 
 ---
 
@@ -293,31 +270,6 @@ jupyter notebook
 
 **Total 3-Year Value:** $570,130
 
-### Strategic Value Beyond Direct Savings
-
-**Indirect Benefits:**
-1. **Customer Lifetime Value Protection:** Retained customers generate revenue for additional years
-2. **Reduced Acquisition Costs:** $200 saved per prevented churn (CAC avoidance)
-3. **Brand Reputation:** Lower churn improves Net Promoter Score
-4. **Market Intelligence:** Model insights guide product and pricing strategy
-5. **Competitive Advantage:** Proactive retention vs. reactive response
-
-**Estimated Additional Value:** $100K-$150K annually
-
-### Risk Mitigation
-
-**Model Risks:**
-- **Performance degradation:** Quarterly retraining ensures model stays current
-- **Data drift:** Monitoring pipeline detects shifts in customer behavior
-- **False positives:** Retention offers designed to avoid customer annoyance
-
-**Business Risks:**
-- **Campaign fatigue:** A/B testing optimizes contact frequency
-- **Competitor response:** Continuous model improvement maintains edge
-- **Market changes:** Flexible model architecture allows feature updates
-
----
-
 ## Technologies Used
 
 ### Data Analysis & Machine Learning
@@ -341,153 +293,6 @@ seaborn==0.12.2        # Statistical visualizations
 ```
 jupyter==1.0.0         # Interactive notebook interface
 ```
-
-### Business Intelligence
-
-**Dashboard Platform:**
-- Tableau Public - Interactive data visualization and business intelligence
-
-**Data Preparation:**
-- 15 optimized CSV exports for dashboard performance
-- Pre-aggregated metrics for real-time dashboard responsiveness
-
-### Development Tools
-
-**Version Control:**
-- Git - Source code management
-- GitHub - Repository hosting and collaboration
-
-**Environment Management:**
-- Python virtual environments for dependency isolation
-- requirements.txt for reproducible installations
-
----
-
-## Future Enhancements
-
-### Model Improvements
-
-**Short-term (1-3 months):**
-- [ ] Apply SMOTE to address 26.5% class imbalance
-- [ ] Hyperparameter optimization using GridSearchCV
-- [ ] Cross-validation with stratified k-folds (k=5)
-- [ ] Experiment with class weight balancing
-- [ ] Target: Improve recall from 60% to 70%
-
-**Medium-term (3-6 months):**
-- [ ] Ensemble methods: Stack XGBoost + Random Forest + LightGBM
-- [ ] Deep learning: Multi-layer perceptron for non-linear patterns
-- [ ] Time-series analysis: Incorporate usage trends over time
-- [ ] Advanced feature engineering: Interaction terms, polynomial features
-- [ ] Target: Achieve 85%+ accuracy and 90%+ ROC-AUC
-
-**Long-term (6-12 months):**
-- [ ] Customer segmentation clustering (K-means, DBSCAN)
-- [ ] Churn reason classification (multi-class prediction)
-- [ ] Customer Lifetime Value (CLV) prediction
-- [ ] Next-best-action recommendation engine
-- [ ] Real-time streaming prediction pipeline
-
-### Deployment & Operations
-
-**Production Infrastructure:**
-- [ ] Containerization with Docker for reproducible deployment
-- [ ] REST API using Flask/FastAPI for real-time predictions
-- [ ] Batch prediction pipeline for nightly scoring
-- [ ] Model versioning and A/B testing framework
-- [ ] Automated retraining pipeline (quarterly or performance-triggered)
-
-**Monitoring & Maintenance:**
-- [ ] Model drift detection dashboard
-- [ ] Prediction quality monitoring (precision, recall tracking over time)
-- [ ] Data quality alerts (missing values, outliers, distribution shifts)
-- [ ] Performance benchmarking against business KPIs
-- [ ] Automated alerting for model degradation
-
-**Integration:**
-- [ ] CRM integration (Salesforce, HubSpot) for real-time customer scoring
-- [ ] Marketing automation platform connection for targeted campaigns
-- [ ] Data warehouse integration for centralized analytics
-- [ ] Business intelligence tool connections (beyond Tableau)
-
-### Analytics Enhancements
-
-**Advanced Analytics:**
-- [ ] Uplift modeling to predict retention campaign effectiveness
-- [ ] Causal inference to measure true intervention impact
-- [ ] Survival analysis for time-to-churn predictions
-- [ ] Propensity score matching for control group analysis
-- [ ] Attribution modeling for multi-touch retention journeys
-
-**Dashboard Improvements:**
-- [ ] Real-time data refresh capabilities
-- [ ] Mobile-responsive dashboard design
-- [ ] Drill-down to individual customer profiles
-- [ ] What-if scenario modeling interface
-- [ ] Automated insight generation and anomaly detection
-
----
-
-## Key Learnings
-
-### Technical Insights
-
-**Data Preprocessing:**
-- Class imbalance significantly impacts model performance; stratified splitting is essential
-- Feature engineering (TenureGroup, ChargePerTenure) provided measurable lift (~3% accuracy)
-- Proper encoding strategy (Label vs. One-Hot) affects model interpretability and performance
-- Scaling is critical for distance-based and gradient-based algorithms
-
-**Model Selection:**
-- XGBoost consistently outperforms traditional algorithms on structured tabular data
-- Ensemble methods (Random Forest, XGBoost) are more robust than single decision trees
-- ROC-AUC is more informative than accuracy for imbalanced classification
-- Precision-recall trade-off requires business context to optimize effectively
-
-**Evaluation Strategy:**
-- Multiple metrics (accuracy, precision, recall, F1, AUC) provide complete performance picture
-- Confusion matrix reveals model weaknesses (40% missed churners in our case)
-- Feature importance guides both model improvement and business strategy
-
-### Business Insights
-
-**Churn Drivers:**
-- Contract commitment is the single strongest predictor (18% feature importance)
-- Customer lifecycle stage (tenure) is critical - first 18 months highest risk
-- Service quality issues (fiber optic 42% churn) drive measurable revenue loss
-- Payment method serves as behavioral proxy for customer engagement
-
-**Actionable Opportunities:**
-- Contract conversion offers highest ROI intervention (~$300K potential)
-- Onboarding program investment justified by early-stage churn concentration
-- Service quality improvements in fiber segment could reduce churn 50%
-- Autopay adoption correlates with 3x lower churn rates
-
-**Financial Impact:**
-- ML investment delivers 365% ROI with 2.3-month payback
-- Retention is 5-25x cheaper than acquisition (industry validated in our case)
-- Even modest recall improvements (60% → 70%) yield significant incremental value ($40K+)
-
-### Project Management
-
-**Documentation:**
-- Comprehensive README drives GitHub repository engagement
-- Clear business framing resonates with non-technical stakeholders
-- Version control enables collaboration and reproducibility
-- Sequential notebook structure improves code review and understanding
-
-**Communication:**
-- Translating technical metrics (ROC-AUC) into business language ($ saved) is critical
-- Visual dashboards accelerate executive decision-making vs. written reports
-- Feature importance bridges data science and business strategy teams
-- Risk segmentation (Low/Medium/High) more actionable than raw probabilities
-
-**Workflow:**
-- Upfront EDA investment pays dividends in feature engineering and model selection
-- Modular notebook structure enables parallel development and easier debugging
-- Saved preprocessors (scaler, encoder) ensure consistency between training and production
-- Early stakeholder alignment on success metrics prevents scope creep
-
 ---
 ## License
 
