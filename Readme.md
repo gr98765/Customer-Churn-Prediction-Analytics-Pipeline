@@ -7,7 +7,6 @@ Built an end-to-end ML pipeline achieving 83% accuracy and 87% ROC-AUC on Telco 
 - **Size:** 7,043 customers × 21 features
 - **Target Variable:** Churn (Yes/No)
 - **Features:** Demographics, services, account information, charges
-
 ---
 
 ## Key Results
