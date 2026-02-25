@@ -1,4 +1,5 @@
 # Customer Churn Prediction & Analytics
+Built an end-to-end ML pipeline achieving 83% accuracy and 87% ROC-AUC on Telco churn prediction, identifying 209 high-risk customers and projecting $204K annual net savings (365% ROI). Deployed interactive Tableau dashboard for stakeholder decision-making with customer segmentation and financial impact analysis. Pipeline with data processing, XGBoost modeling, and 3-year ROI projections.
 
 ### Dataset
 
