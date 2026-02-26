@@ -29,7 +29,7 @@ Built an end-to-end ML pipeline achieving 83% accuracy and 87% ROC-AUC on Telco 
 
 ## Interactive Dashboard
 
-**[View Live Tableau Dashboard](https://public.tableau.com/app/profile/aditi.manivannan/viz/CustomerChurnAnalysis_17699188633880/Dashboard1)**
+**[View Live Tableau Dashboard](https://public.tableau.com/app/profile/gaurangi.raul/viz/CustomerChurnAnalysis_final/Dashboard1)**
 
 The interactive dashboard provides:
 - Executive KPI summary with key metrics
@@ -193,6 +193,4 @@ jupyter==1.0.0         # Interactive notebook interface
 ---
 
 ---
-
-**Repository:** [github.com/yourusername/churn-prediction-ml-analytics](https://github.com/yourusername/churn-prediction-ml-analytics)  
-**Dashboard:** [View Interactive Tableau Dashboard](https://public.tableau.com/app/profile/aditi.manivannan/viz/CustomerChurnAnalysis_17699188633880/Dashboard1)  
+graul
