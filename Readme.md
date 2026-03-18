@@ -51,45 +51,6 @@ The interactive dashboard provides:
 - Risk scoring and high-priority customer identification
 - Model performance visualization
 - Financial impact projections and ROI analysis
-
----
-
-## Business Insights
-
-### Critical Findings
-
-**1. Contract Type Drives Churn**
-- Month-to-month contracts: 43% churn rate
-- One-year contracts: 11% churn rate
-- Two-year contracts: 3% churn rate
-- **Recommendation:** Contract conversion campaign could save approximately $300K annually
-
-**2. Customer Lifecycle Risk Patterns**
-- First year: 45% churn rate
-- 1-2 years: 35% churn rate
-- 2-4 years: 20% churn rate
-- 4+ years: 5% churn rate
-- **Recommendation:** Enhanced onboarding and engagement for customers in first 18 months
-
-**3. Service Quality Issues**
-- Fiber optic internet: 42% churn rate
-- DSL internet: 19% churn rate
-- No internet service: 7% churn rate
-- **Recommendation:** Immediate investigation into fiber optic service quality and competitive positioning
-
-**4. Payment Method as Behavioral Indicator**
-- Electronic check: 45% churn rate
-- Mailed check: 19% churn rate
-- Credit card: 15% churn rate
-- Bank transfer: 17% churn rate
-- **Recommendation:** Incentivize autopay adoption to increase customer commitment
-
-**5. Price Sensitivity Analysis**
-- Average monthly charges (churned): $74.44
-- Average monthly charges (retained): $61.27
-- Difference: $13.17
-- **Recommendation:** Review pricing strategy for premium tiers and justify value proposition
-
 ---
 
 ## Project Structure
@@ -294,9 +255,6 @@ seaborn==0.12.2        # Statistical visualizations
 jupyter==1.0.0         # Interactive notebook interface
 ```
 ---
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for full details.
 
 ---
 

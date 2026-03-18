@@ -1,0 +1,23 @@
+# Large data files - DON'T upload to GitHub
+data/raw/*.csv
+data/processed/*.csv
+data/tableau/*.csv
+
+# Model files - too large
+models/*.pkl
+*.pkl
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+*.egg-info/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Virtual environment
+venv/
+env/
