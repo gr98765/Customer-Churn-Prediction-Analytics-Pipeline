@@ -1,19 +1,5 @@
 # Customer Churn Prediction & Analytics
 
-## Project Overview
-
-### Business Problem
-
-Customer churn costs telecommunications companies millions annually. This project builds a predictive model to identify at-risk customers before they leave, enabling targeted retention campaigns and significant revenue savings.
-
-### Solution Approach
-
-Developed an end-to-end machine learning pipeline that:
-- Analyzes 7,043 customer records across 20+ features
-- Predicts churn probability with 83% accuracy using XGBoost
-- Segments customers into actionable risk categories
-- Delivers insights through an interactive Tableau dashboard
-
 ### Dataset
 
 - **Source:** [Telco Customer Churn](https://www.kaggle.com/datasets/blastchar/telco-customer-churn) (Kaggle)
@@ -131,56 +117,6 @@ pip install -r requirements.txt
 ```bash
 jupyter notebook
 ```
----
-
-## Model Performance
-
-### Classification Metrics
-
-**Overall Performance:**
-- **Accuracy:** 83.2% - Correctly classified 1,173 out of 1,409 customers
-- **ROC-AUC:** 87.5% - Excellent discrimination between churners and non-churners
-
-**Precision Analysis:**
-- **Score:** 70.4%
-- **Interpretation:** When model predicts churn, it's correct 70% of the time
-- **Business Impact:** 30% false positive rate means some wasted retention effort, but acceptable given cost vs. lost customer value
-
-**Recall Analysis:**
-- **Score:** 60.1%
-- **Interpretation:** Model catches 60% of actual churners
-- **Business Impact:** Missing 40% of churners is concerning; improvement target for next iteration
-- **Trade-off:** Higher recall would increase false positives and retention costs
-
-**F1-Score:**
-- **Score:** 64.8%
-- **Interpretation:** Harmonic mean balancing precision and recall
-- **Benchmark:** Above industry average for imbalanced classification problems
-
-### Model Comparison Justification
-
-**Why XGBoost over alternatives:**
-
-**vs. Logistic Regression:**
-- +2.9% accuracy improvement
-- +5.2% precision improvement
-- +5.3% recall improvement
-- Captures non-linear relationships that logistic regression misses
-
-**vs. Decision Tree:**
-- +5.1% accuracy improvement
-- +10.3% precision improvement
-- +10.6% recall improvement
-- More robust to overfitting through ensemble approach
-
-**vs. Random Forest:**
-- +1.5% accuracy improvement
-- +2.6% precision improvement
-- +2.8% recall improvement
-- Faster training through gradient boosting optimization
-- Better handling of class imbalance
-
-
 ---
 
 ## Business Impact

@@ -2,11 +2,6 @@
 
 ### Phase 1: Exploratory Data Analysis
 
-**Objectives:**
-- Understand data structure and quality
-- Identify patterns and relationships
-- Discover key churn drivers
-
 **Key Activities:**
 - Analyzed 7,043 customer records across 21 features
 - Identified 26.5% churn rate (class imbalance)
@@ -42,24 +37,10 @@ Created 5 new features to enhance model performance:
 | ContractDuration | Numerical | Contract length in months | Quantifies commitment level |
 | SeniorWithDependents | Binary | Senior citizen with dependents | Demographic interaction feature |
 
-**Encoding:**
-- Label Encoding for binary variables (2 categories)
-- One-Hot Encoding for multi-category variables (3+ categories)
-- Final feature count: 32 features after encoding
-
-**Scaling:**
-- Applied StandardScaler to numerical features
-- Ensures fair weighting across different scales
-
 **Train-Test Split:**
 - 80% training set: 5,634 samples
 - 20% test set: 1,409 samples
 - Stratified split to maintain 26.5% churn ratio in both sets
-
-**Outputs:**
-- Clean, encoded dataset ready for modeling
-- Preserved data integrity and business logic
-- Reproducible preprocessing pipeline saved
 
 ---
 
@@ -138,38 +119,3 @@ Interpretation:
 13. `financial_impact.csv` - ROI calculations
 14. `scenario_analysis.csv` - What-if projections
 15. `revenue_breakdown.csv` - Revenue segmentation
-
-**Dashboard Architecture:**
-
-**Page 1: Executive Summary**
-- KPI cards: Total customers, churn rate, high-risk count, revenue at risk
-- Churn distribution visualization
-- Risk segment breakdown
-- Model accuracy gauge
-
-**Page 2: Customer Segmentation**
-- Churn rate by contract type
-- Churn rate by internet service
-- Churn rate by payment method
-- Churn rate by tenure lifecycle
-- Interactive filters for drill-down analysis
-
-**Page 3: Risk Analysis & Targeting**
-- Risk distribution (Low/Medium/High)
-- High-risk customer table (top 100 by probability)
-- Customer profile scatter plot (tenure vs charges)
-- High-risk segment characteristics
-
-**Page 4: Model Performance**
-- Confusion matrix heatmap
-- Performance metrics cards
-- Feature importance chart
-- ROC curve visualization
-
-**Page 5: Financial Impact**
-- Current vs projected revenue loss
-- ROI calculation breakdown
-- Scenario analysis (varying recall rates)
-- Revenue funnel by risk segment
-
----
